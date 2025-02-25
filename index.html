@@ -13,30 +13,31 @@
         <p>Your content goes here...</p>
     </div>
 
-    <div id="cookieConsent" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Cookie Settings</h4>
-                </div>
-                <div class="modal-body">
-                    <p>We use cookies to ensure you get the best experience on our website.</p>
-                    <div class="checkbox">
-                        <label><input type="checkbox" id="necessaryCookies" checked disabled> Necessary Cookies</label>
+        <div id="cookieConsent" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Cookie Settings</h4>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" id="analyticsCookies"> Analytics Cookies</label>
+                    <div class="modal-body">
+                        <p>We use cookies to ensure you get the best experience on our website.</p>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="necessaryCookies" checked disabled> Necessary Cookies</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="analyticsCookies"> Analytics Cookies</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" id="marketingCookies"> Marketing Cookies</label>
+                        </div>
                     </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" id="marketingCookies"> Marketing Cookies</label>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" onclick="rejectCookies()">Reject Cookies</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="saveCookieSettings()">Save Settings</button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="saveCookieSettings()">Save Settings</button>
                 </div>
             </div>
         </div>
-    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
