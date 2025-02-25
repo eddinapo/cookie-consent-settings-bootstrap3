@@ -15,6 +15,15 @@ function saveCookieSettings() {
     $("#cookieConsent").modal('hide');
 }
 
+
+function rejectCookies() {
+    setCookie("analyticsCookies", false, 365);
+    setCookie("marketingCookies", false, 365);
+    setCookie("cookieConsent", true, 365);
+
+    $("#cookieConsent").modal('hide');
+}
+
 function setCookie(name, value, days) {
     var expires = "";
     if (days) {
