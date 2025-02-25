@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Settings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Website</h1>
+        <p>Your content goes here...</p>
+    </div>
+
+    <div id="cookieConsent" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cookie Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <p>We use cookies to ensure you get the best experience on our website.</p>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="necessaryCookies" checked disabled> Necessary Cookies</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="analyticsCookies"> Analytics Cookies</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="marketingCookies"> Marketing Cookies</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="saveCookieSettings()">Save Settings</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

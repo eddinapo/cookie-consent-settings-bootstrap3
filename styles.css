@@ -1,0 +1,12 @@
+/* Styles for the Cookie Consent Modal */
+#cookieConsent .modal-content {
+    border-radius: 5px;
+}
+#cookieConsent .modal-header {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+#cookieConsent .modal-footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
